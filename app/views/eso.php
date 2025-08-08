@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<!-- saved from url=(0042)https://dgii.gov.do/c/cppp.aspx?dm=4zfdq6y -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>
 
     </title>
-    <link href="./cppp_files/styles.css" rel="stylesheet" type="text/css">
-    <script>NS_CSM_td = 570575149; NS_CSM_pd = 275116664; NS_CSM_u = "/clm10"; NS_CSM_col = "DGII_StealWatch_Collector";</script>
-    <script
-        type="text/javascript">function sendTimingInfoInit() { setTimeout(sendTimingInfo, 0) } function sendTimingInfo() { var wp = window.performance; if (wp) { var c1, c2, t; c1 = wp.timing; if (c1) { var cm = {}; cm.ns = c1.navigationStart; if ((t = c1.unloadEventStart) > 0) cm.us = t; if ((t = c1.unloadEventEnd) > 0) cm.ue = t; if ((t = c1.redirectStart) > 0) cm.rs = t; if ((t = c1.redirectEnd) > 0) cm.re = t; cm.fs = c1.fetchStart; cm.dls = c1.domainLookupStart; cm.dle = c1.domainLookupEnd; cm.cs = c1.connectStart; cm.ce = c1.connectEnd; if ((t = c1.secureConnectionStart) > 0) cm.scs = t; cm.rqs = c1.requestStart; cm.rss = c1.responseStart; cm.rse = c1.responseEnd; cm.dl = c1.domLoading; cm.di = c1.domInteractive; cm.dcls = c1.domContentLoadedEventStart; cm.dcle = c1.domContentLoadedEventEnd; cm.dc = c1.domComplete; if ((t = c1.loadEventStart) > 0) cm.ls = t; if ((t = c1.loadEventEnd) > 0) cm.le = t; cm.tid = NS_CSM_td; cm.pid = NS_CSM_pd; cm.ac = NS_CSM_col; var xhttp = new XMLHttpRequest(); if (xhttp) { var JSON = JSON || {}; JSON.stringify = JSON.stringify || function (ob) { var t = typeof (ob); if (t != "object" || ob === null) { if (t == "string") ob = '"' + ob + '"'; return String(ob); } else { var n, v, json = [], arr = (ob && ob.constructor == Array); for (n in ob) { v = ob[n]; t = typeof (v); if (t == "string") v = '"' + v + '"'; else if (t == "object" && v !== null) v = JSON.stringify(v); json.push((arr ? "" : '"' + n + '":') + String(v)); } return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}"); } }; xhttp.open("POST", NS_CSM_u, true); xhttp.send(JSON.stringify(cm)); } } } } if (window.addEventListener) window.addEventListener("load", sendTimingInfoInit, false); else if (window.attachEvent) window.attachEvent("onload", sendTimingInfoInit); else window.onload = sendTimingInfoInit;</script>
+    <style>
+        @charset "utf-8";
+
+        /*@media screen and (max-width: 1020px) {*/
+        #container,
+        #header,
+        #content,
+        #footer {
+            float: none;
+            width: auto;
+        }
+
+        p {
+            font-size: 2em;
+        }
+
+        #header {
+            background-color: #7daf18;
+            padding: 5%;
+            border-bottom: 1em solid #2d2d2d;
+        }
+
+        #title {
+            padding: 5%;
+        }
+
+        .title-orange {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            color: #de9900;
+            display: block;
+            font-weight: bold;
+        }
+
+        .title-green {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4em;
+            color: #4b8101;
+            display: block;
+        }
+
+        #content {
+            padding: 0 5% 5% 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+        }
+
+        .data_table {
+            /*	border-collapse:collapse;
+	border-spacing:3%;	*/
+        }
+
+        .data_table td {
+            padding: 0.8em;
+            border-bottom: 1px solid #cfcfcf;
+        }
+
+        .data_table td.left-col {
+            background-color: #f1f1f1;
+            color: #000;
+            width: 38%;
+        }
+
+        .data_table td.right-col {
+            background-color: #fff;
+            color: #676767;
+            width: 58%;
+        }
+
+        #footer {
+            padding: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5em;
+            background-color: #cfcfcf;
+            color: #3a3a3a;
+        }
+
+        /*}*/
+    </style>
+
 </head>
 
 <body cz-shortcut-listen="true">
@@ -22,14 +97,13 @@
 
         <div class="aspNetHidden">
 
-            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA8B8495">
         </div>
         <div>
 
 
             <div id="mainContainer">
                 <div id="header">
-                    <img src="./cppp_files/LogoPlacaProvisional.gif" height="49" alt="Placa Provisional">
+                    <img src="image.png" height="49" alt="Placa Provisional">
                 </div>
                 <div id="title">
                     <span class="title-orange">Sistema Datamatrix</span> <span class="title-green">Validación
@@ -43,7 +117,7 @@
                                     <span id="lblECodigo">Código</span>
                                 </td>
                                 <td class="right-col">
-                                    <span id="lblCodigo">5drwr6u</span>
+                                    <span id="lblCodigo">7zjdq3y</span>
                                 </td>
                             </tr>
                             <tr>
@@ -167,12 +241,6 @@
     </form>
 
 
-    <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"
-        src="./cppp_files/saved_resource.html"></iframe>
-    <div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="es-t-k0-und"
-        input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}">
-    </div><iframe frameborder="0" scrolling="no" src="./cppp_files/keyboard.html"
-        style="background-color: transparent; border: 0px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px 0px; box-sizing: content-box; height: 211px; margin: 0px; position: fixed; width: 517px; z-index: 2147483644; left: 1002px; top: 535px; display: none;"></iframe>
 </body>
 
 </html>

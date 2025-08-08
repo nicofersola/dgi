@@ -1,0 +1,208 @@
+/* === Reset y cuerpo === */
+body {
+    margin: 0;
+    font-family: "cofo-peshka-variable", sans-serif;
+    font-variation-settings: 'wdth' 50, 'wght' 900, 'slnt' 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #585758;
+}
+
+/* === Contenedor principal === */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 275px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* === Menú de usuario === */
+.user-menu {
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.user-menu table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.user-menu th,
+.user-menu td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.user-menu th {
+    background-color: #3f9ed7;
+    color: #fff;
+}
+
+/* === Tablas generales === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #3f9ed7;
+    color: #fff;
+}
+
+/* === Botones === */
+button,
+input[type="submit"],
+.buttons form button,
+.buttons form input[type="submit"],
+button[type="submit"] {
+    padding: 24px;
+    background-color: #3f9ed7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #585758;
+}
+
+/* === Botones activos especiales === */
+.active-button {
+    background-color: #32cd32 !important;
+    color: #fff;
+    box-shadow: 0 0 10px #32cd32, 0 0 20px #32cd32;
+    text-shadow: 0 0 6px #32cd32;
+    animation: neonGlow 1.8s ease-in-out infinite;
+    font-weight: bold;
+    padding: 12px 25px;
+    font-size: 21px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* === Formulario de botones === */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.buttons form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* === Inputs y selects === */
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select,
+select option {
+    font-size: 20px;
+}
+
+/* === Etiquetas e indicadores === */
+.input-label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.unit {
+    color: #d9534f;
+    font-weight: bold;
+    background-color: #f9f2f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* === Estilo especial para formulario de velocidad === */
+.velForm input {
+    width: 225px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #d0da76;
+    color: #333;
+}
+
+.velForm input:hover,
+.velForm input:focus {
+    box-shadow: 0 0 0 2px #333;
+}
+
+/* === Animación === */
+@keyframes neonGlow {
+    0%, 100% {
+        box-shadow: 0 0 10px #32cd32, 0 0 20px #32cd32;
+    }
+    50% {
+        box-shadow: 0 0 14px #32cd32, 0 0 28px #32cd32;
+    }
+}
+
+/* === Responsivo === */
+@media only screen and (max-width: 767px) {
+    .user-menu {
+        padding: 20px 0;
+    }
+
+    .user-menu table {
+        margin-bottom: 0;
+    }
+
+    .user-menu p {
+        font-size: 18px;
+    }
+
+    .buttons form button,
+    .buttons form input[type="submit"] {
+        padding: 17px;
+        font-size: 21px;
+    }
+}
